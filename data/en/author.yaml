@@ -1,0 +1,18 @@
+# some information about you
+name: "Ankit Kumar"
+nickname: "0xankit"
+# greeting message before your name. it will default to "Hi! I am" if not provided
+greeting: "Hi, I am"
+image: "images/author/ankit.png"
+# give your some contact information. they will be used in the footer
+contactInfo:
+  email: "ank_kr@icloud.com"
+  phone: "+91 9123407982"
+
+# some summary about what you do
+summary:
+  - I am a Blockchain Developer @ Persistence
+  - I am a Devops
+  - I love servers
+  - I work on open-source projects
+  - I love to work with some fun projects
