@@ -23,6 +23,9 @@ enableEmoji: true
 
 # Site parameters
 params:
+  # Background Image
+  background: "images/common/background_new.jpg"
+
   # GitHub repo URL of your site
   gitRepo: https://github.com/0xankit/0xankit.github.io
 
@@ -35,4 +38,8 @@ params:
   # Provide newsletter configuration. This feature hasn't been implemented yet.
   # Currently, you can just hide it from the footer.
   newsletter:
-    enable: true
+    enable: false
+sitemap:
+  changefreq: monthly
+  filename: sitemap.xml
+  priority: 0.5

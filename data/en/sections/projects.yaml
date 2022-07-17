@@ -21,28 +21,37 @@ buttons:
 
 # your projects
 projects:
-- name: Kubernetes
-  logo: /images/sections/projects/kubernetes.png
+- name: Assetmentle Modules
+  logo: /images/sections/projects/assetmantle.png
   role: Contributor
-  timeline: "March 2018 - Present"
-  repo: https://github.com/kubernetes/kubernetes # If your project is a public repo on GitHub, then provide this link. it will show star count.
+  timeline: "March 2022 - Present"
+  repo: https://github.com/AssetMantle/modules # If your project is a public repo on GitHub, then provide this link. it will show star count.
   #url: ""  # If your project is not a public repo but it has a website or any external details url then provide it here. don't provide "repo" and "url" simultaneously.
-  summary: Production-Grade Container Scheduling and Management.
-  tags: ["professional", "kubernetes", "cloud"]
+  summary: Modules based on cosmos-sdk for assetmantle chain.
+  tags: ["professional", "NFT", "Blockchain", "assetmantle"]
 
-- name: Tensorflow
-  logo: /images/sections/projects/tensorflow.png
-  role: Developer
-  timeline: "Jun 2018 - Present"
-  repo: https://github.com/tensorflow/tensorflow
+- name: Assetmentle Explorer
+  logo: /images/sections/projects/assetmantle.png
+  role: Contributor
+  timeline: "March 2022 - Present"
+  repo: https://github.com/AssetMantle/client # If your project is a public repo on GitHub, then provide this link. it will show star count.
+  #url: ""  # If your project is not a public repo but it has a website or any external details url then provide it here. don't provide "repo" and "url" simultaneously.
+  summary: Project implementing explorer for Assetmantle chain.
+  tags: [ "professional", "NFT", "Blockchain", "assetmantle" ]
+
+- name: PersistenceCore
+  logo: /images/sections/projects/persistence.png
+  role: Blockchain Developer
+  timeline: "July 2021 - Mar 2022"
+  repo: https://github.com/persistenceOne/persistenceCore
   #url: ""
-  summary: An Open Source Machine Learning Framework for Everyone.
-  tags: ["professional", "machine-learning","academic"]
+  summary: Project implementing an application for the Persistence Core chain that all the other chains in the ecosystem connect to as a raised and open moderator for interoperability, shared security, and as a gateway to other ecosystems and chains.
+  tags: ["professional", "persistenceOne","Blockchain"]
 
-- name: Toha
-  logo: /images/sections/projects/toha.png
+- name: FairTradeCoffee
+  logo: /images/sections/projects/solidity.png
   role: Owner
-  timeline: "Jun 2019 - Present"
-  repo: https://github.com/hossainemruz/toha
-  summary: A Hugo theme for personal portfolio.
-  tags: ["hobby","hugo","theme","professional"]
+  timeline: "Jan 2019 - Jun 2020"
+  repo: https://github.com/0xankit/FairTradeCoffee
+  summary: A personal project implementing a Ethereum DApp that demonstrates a Supply Chain flow between a Seller and Buyer.
+  tags: ["hobby","professional", "solidity"]

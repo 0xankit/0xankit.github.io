@@ -3,7 +3,7 @@ name: "Ankit Kumar"
 nickname: "0xankit"
 # greeting message before your name. it will default to "Hi! I am" if not provided
 greeting: "Hi, I am"
-image: "images/author/ankit.png"
+image: "images/author/0xankit.jpeg"
 # give your some contact information. they will be used in the footer
 contactInfo:
   email: "ank_kr@icloud.com"
@@ -11,8 +11,8 @@ contactInfo:
 
 # some summary about what you do
 summary:
-  - I am a Blockchain Developer @ Persistence
-  - I am a Devops
-  - I love servers
+  - I am a Blockchain Developer @AssetMantle
+  - I am a infosec enthusiast by passsion!
+  - I love to cook
   - I work on open-source projects
   - I love to work with some fun projects

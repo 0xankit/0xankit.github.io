@@ -11,32 +11,44 @@ section:
 # Your experiences
 experiences:
 - company:
-    name: Example Co.
-    url: "https://www.example.com"
-    location: Dhaka Branch
+    name: AssetMantle.
+    url: "https://www.assetmantle.one"
+    location: Bangalore
     # company overview
-    overview: Example Co. is a widely recognized company for cloud-native development. It builds tools for Kubernetes.
+    overview: AssetMantle is a widely recognized company for it's NFT marketplace in cosmos ecosystem. It has a validator arm as well.
   positions:
-  - designation: Senior Software Engineer
-    start: Nov 2019
+  - designation: Blockchain Developer
+    start: March 2022
     # don't provide end date if you are currently working there. It will be replaced by "Present"
     # end: Dec 2020
     # give some points about what was your responsibilities at the company.
     responsibilities:
-    - Design and develop XYZ tool for ABC task
-    - Design, develop and manage disaster recovery tool [Xtool](https://www.example.com) that backup Kubernetes volumes, databases, and cluster's resource definition.
-    - Lead backend team.
+    - Worked on Assetmantle modules that is the core of Assetmantle chain.
+    - Worked on Assetmantle explorer i.e based on scala play framework.
+    - I have worked on Assetmantle Wallet i.e based on JS.
+    - Managed Stakedrop campaign integration.
 
 - company:
-    name: PreExample Co.
-    url: "https://www.preexample.com"
-    location: Nowhere
-    overview: PreExample Co. is a gateway company to enter into Example co. So, nothing special here.
+    name: Persistence One.
+    url: "https://persistence.one"
+    location: Bangalore
+    overview: Persistence is a Tendermint based specialized Layer-1 powering an ecosystem of DeFi dApps focused on unlocking the liquidity of staked assets.
   positions:
-  - designation: Software Engineer
-    start: March 2016
-    end: May 2017
+  - designation: Blockchain Developer
+    start: July 2021
+    end: Mar 2022
     responsibilities:
-    - Write lots of example codes.
-    - Read lots of examples.
-    - See lots of example videos.
+    - Contributed on persistenceCore, persistenceBridge.
+    - Implemented Akka Actors for persistenceBridge.
+
+- company:
+    name: C-DAC bangalore
+    url: https://www.cdac.in/index.aspx?id=bangalore
+    location: WFH
+    overview: The Centre for Development of Advanced Computing is an Indian autonomous scientific society, operating under the Ministry of Electronics and Information Technology
+  positions:
+    - designation: Intern
+      start: June 2020
+      end: Aug 2020
+      responsibilities:
+      - I developed an IPv6 firewall based on a content matching algorithm, on top of hyperscan an OpenSource project by Intel.
