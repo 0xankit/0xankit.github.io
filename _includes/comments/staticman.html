@@ -22,7 +22,7 @@
               <small class="text-muted">{{ comment.date | date: '%b %-d, %Y %H:%M' }}</small>
             {% endif %}
           </header>
-          <p class="mb-0">{{ comment.message | markdownify }}</p>
+          <p class="mb-0">{{ comment.message | escape | newline_to_br }}</p>
         </article>
       {% endfor %}
     </div>
@@ -36,7 +36,7 @@
     <input type="hidden" name="options[slug]" value="{{ post_slug }}">
     <input type="hidden" name="options[redirect]" value="{{ page.url | absolute_url }}#comments">
     <div style="display: none;">
-      <label>Don’t fill this out if you’re human: <input name="fields[botpot]" /></label>
+      <label>Don’t fill this out if you’re human: <input name="fields[honeypot]" /></label>
     </div>
 
     <div class="mb-3">
