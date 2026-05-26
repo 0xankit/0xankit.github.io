@@ -38,11 +38,11 @@
 
     <div class="mb-3">
       <label class="form-label" for="comment-name">Name</label>
-      <input id="comment-name" class="form-control" type="text" name="fields[name]" required>
+      <input id="comment-name" class="form-control" type="text" name="fields[name]" maxlength="80" required>
     </div>
     <div class="mb-3">
       <label class="form-label" for="comment-message">Comment</label>
-      <textarea id="comment-message" class="form-control" rows="5" name="fields[message]" required></textarea>
+      <textarea id="comment-message" class="form-control" rows="5" name="fields[message]" maxlength="2000" required></textarea>
     </div>
 
     <button class="btn btn-primary" type="submit">Send comment</button>
