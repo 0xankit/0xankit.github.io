@@ -6,15 +6,15 @@ Personal website and technical blog powered by Jekyll using the Chirpy theme.
 
 Prerequisites:
 
-- Ruby 3.1.x and Bundler installed
+- Ruby 3.3.x and Bundler installed
 
 Notes:
 
-- `jekyll-theme-chirpy` in this repository requires Ruby `~> 3.1`.
-- On macOS with Homebrew (if `ruby@3.1` is installed but not linked), run commands with:
+- This repository pins the Ruby runtime in `.ruby-version` and the GitHub Actions workflow uses the same value.
+- On macOS with Homebrew (if `ruby@3.3` is installed but not linked), run commands with:
 
 ```bash
-export PATH="/opt/homebrew/opt/ruby@3.1/bin:$PATH"
+export PATH="/opt/homebrew/opt/ruby@3.3/bin:$PATH"
 ```
 
 Commands:
@@ -35,4 +35,11 @@ Then open http://127.0.0.1:4000.
 
 ## Deployment
 
-GitHub Pages deployment is handled by GitHub Actions workflow in `.github/workflows/pages-deploy.yml` and runs on pushes to `master`.
+GitHub Pages deployment is handled by GitHub Actions workflow in `.github/workflows/pages-deploy.yml`.
+
+After migrating from Hugo to Chirpy's GitHub Actions artifact deployment flow, set:
+
+- **Repository Settings → Pages → Build and deployment → Source = `GitHub Actions`**
+
+If Pages is still configured to deploy from the `gh-pages` branch, `actions/deploy-pages` fails with:
+`Invalid deployment branch ... Deployments are only allowed from gh-pages`.
