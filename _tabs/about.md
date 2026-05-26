@@ -6,27 +6,26 @@ order: 4
 
 ## Hi, I am Ankit Kumar (0xankit)
 
-I am a passionate blockchain developer with 1.5+ years of professional experience and active hands-on learning in blockchain since 2017. I have worked on NFT-focused modules in Go, explorer systems in Scala Play, and Ethereum-based smart contract projects.
+I am a results-driven Blockchain Engineer with 5+ years of experience across Cosmos SDK and Tendermint/CometBFT ecosystems. I build production-grade decentralized systems with a focus on interoperability, performance, observability, and security.
 
-Current role: Blockchain Developer at [AssetMantle](https://assetmantle.one/)
+Current role: Blockchain Engineer at [ENODA](https://enoda.com/) (Edinburgh, UK)
 
-Resume: [Download PDF](/files/Ankit_Kumar_Nov_2022.pdf)
+Resume: [Download PDF](/files/Ankit_Kumar_protocol_dev.pdf)
 
 ### Highlights
 
-- Blockchain Developer @AssetMantle
-- Infosec enthusiast
-- Open-source contributor
-- Enjoy building practical, fun side projects
+- Blockchain Engineer @ENODA
+- Cosmos SDK, IBC, Celestia DA, and rollup-focused experience
+- Protocol and infrastructure builder across Sui, Cosmos, Ethereum, and Quorum
+- Open-source contributor and security-minded builder
 
 ### Skills
 
-- Scala (Play Framework)
-- Go
-- JavaScript
-- Solidity
-- Leadership
-- Teamwork
+- Rust (CosmWasm), Go (Cosmos SDK), Solidity
+- Tendermint/CometBFT, IBC, Optimistic Rollups, Celestia
+- Python (Django), Node.js, Scala (Play Framework)
+- React and React Native
+- Docker, Prometheus, Loki, Tempo, Grafana, CI/CD
 
 ### Social
 
@@ -39,4 +38,5 @@ Resume: [Download PDF](/files/Ankit_Kumar_Nov_2022.pdf)
 
 - Bachelor of Technology (Electrical Engineering), NIT Silchar
 - Blockchain Developer Nanodegree (Udacity)
+- Interchain Developer Academy Certification (Interchain Foundation & B9Lab)
 - Autopsy 8-hour Online Training (Basis Technology)
