@@ -4,7 +4,7 @@ comments:
   format: "yml"
   filename: "{@timestamp}"
   moderation: true
-  allowedFields: ["name", "email", "message"]
+  allowedFields: ["name", "email", "message", "botpot"]
   requiredFields: ["name", "message"]
   generatedFields:
     date:
