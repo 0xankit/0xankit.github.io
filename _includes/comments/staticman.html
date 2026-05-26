@@ -1,0 +1,57 @@
+{% assign post_slug = page.slug | default: page.title | slugify %}
+{% assign comments_data = site.data.comments[post_slug] %}
+{% assign comments_list = '' | split: '' %}
+
+{% if comments_data %}
+  {% for entry in comments_data %}
+    {% assign comment = entry[1] | default: entry %}
+    {% assign comments_list = comments_list | push: comment %}
+  {% endfor %}
+  {% assign comments_list = comments_list | sort: 'date' %}
+{% endif %}
+
+<section id="comments" class="mt-5 pt-2">
+  {% if comments_list.size > 0 %}
+    <h3 class="mb-4">Comments ({{ comments_list.size }})</h3>
+    <div class="d-flex flex-column gap-4 mb-5">
+      {% for comment in comments_list %}
+        <article class="border rounded p-3">
+          <header class="d-flex justify-content-between align-items-baseline mb-2">
+            <strong>{{ comment.name | default: 'Anonymous' | escape }}</strong>
+            {% if comment.date %}
+              <small class="text-muted">{{ comment.date | date: '%b %-d, %Y %H:%M' }}</small>
+            {% endif %}
+          </header>
+          <p class="mb-0">{{ comment.message | markdownify }}</p>
+        </article>
+      {% endfor %}
+    </div>
+  {% endif %}
+
+  <h3 class="mb-3">Leave a comment</h3>
+  <form
+    method="POST"
+    action="{{ site.comments.staticman.endpoint }}/v3/entry/{{ site.comments.staticman.repository }}/{{ site.comments.staticman.branch }}/comments"
+  >
+    <input type="hidden" name="options[slug]" value="{{ post_slug }}">
+    <input type="hidden" name="options[redirect]" value="{{ page.url | absolute_url }}#comments">
+    <div style="display: none;">
+      <label>Don’t fill this out if you’re human: <input name="fields[botpot]" /></label>
+    </div>
+
+    <div class="mb-3">
+      <label class="form-label" for="comment-name">Name</label>
+      <input id="comment-name" class="form-control" type="text" name="fields[name]" required>
+    </div>
+    <div class="mb-3">
+      <label class="form-label" for="comment-email">Email</label>
+      <input id="comment-email" class="form-control" type="email" name="fields[email]">
+    </div>
+    <div class="mb-3">
+      <label class="form-label" for="comment-message">Comment</label>
+      <textarea id="comment-message" class="form-control" rows="5" name="fields[message]" required></textarea>
+    </div>
+
+    <button class="btn btn-primary" type="submit">Send comment</button>
+  </form>
+</section>
