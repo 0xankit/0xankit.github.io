@@ -1,20 +1,27 @@
-# Created by https://www.toptal.com/developers/gitignore/api/hugo
-# Edit at https://www.toptal.com/developers/gitignore?templates=hugo
+# Bundler cache
+.bundle
+vendor
+Gemfile.lock
 
-### Hugo ###
-# Generated files by hugo
-/public/
-/resources/_gen/
-/assets/jsconfig.json
-hugo_stats.json
+# Jekyll cache
+.jekyll-cache
+.jekyll-metadata
+_site
 
-# Executable may be added to repository
-hugo.exe
-hugo.darwin
-hugo.linux
+# RubyGems
+*.gem
 
-# Temporary lock file while building
-/.hugo_build.lock
-.DS_Store
+# NPM dependencies
+node_modules
+package-lock.json
 
-# End of https://www.toptal.com/developers/gitignore/api/hugo
+# IDE configurations
+.idea
+.vscode/*
+!.vscode/settings.json
+!.vscode/extensions.json
+!.vscode/tasks.json
+
+# Misc
+_sass/vendors
+assets/js/dist
