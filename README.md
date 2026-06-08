@@ -15,6 +15,8 @@ Notes:
 
 ```bash
 export PATH="/opt/homebrew/opt/ruby@3.3/bin:$PATH"
+
+export PATH="/opt/homebrew/opt/ruby@3.3/bin:$PATH" && bash tools/run.sh -H 127.0.0.**1**
 ```
 
 Commands:
