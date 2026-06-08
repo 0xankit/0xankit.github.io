@@ -1,0 +1,13 @@
+comments:
+  branch: "main"
+  path: "_data/comments/{options.slug}"
+  format: "yml"
+  filename: "{@timestamp}"
+  moderation: true
+  allowedFields: ["name", "message"]
+  requiredFields: ["name", "message"]
+  generatedFields:
+    date:
+      type: date
+      options:
+        format: "iso8601"
