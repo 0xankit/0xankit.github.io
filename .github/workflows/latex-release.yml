@@ -1,0 +1,49 @@
+name: Release LaTeX documents
+
+on:
+  push:
+    branches:
+      - main
+      - master
+    paths:
+      - "src/**/*.tex"
+      - "src/**/*.cls"
+      - "src/fonts/**"
+      - "src/*.png"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  build-and-release:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Build PDFs
+        uses: xu-cheng/latex-action@v4
+        with:
+          root_file: |
+            resume.tex
+            cv.tex
+            coverletter.tex
+          working_directory: src
+          compiler: xelatex
+          args: "-interaction=nonstopmode -halt-on-error -file-line-error"
+
+      - name: Prepare release assets
+        run: |
+          mkdir -p release
+          cp src/resume.pdf release/resume.pdf
+          cp src/cv.pdf release/cv.pdf
+          cp src/coverletter.pdf release/coverletter.pdf
+
+      - name: Create GitHub release
+        uses: softprops/action-gh-release@v2
+        with:
+          tag_name: "latex-${{ github.sha }}"
+          name: "LaTeX documents from ${{ github.sha }}"
+          body: "Generated from commit ${{ github.sha }}."
+          files: release/*.pdf

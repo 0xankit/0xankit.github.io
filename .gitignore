@@ -25,3 +25,12 @@ package-lock.json
 # Misc
 _sass/vendors
 assets/js/dist
+
+# LaTeX build output
+src/*.aux
+src/*.fdb_latexmk
+src/*.fls
+src/*.log
+src/*.out
+src/*.pdf
+src/*.synctex.gz
