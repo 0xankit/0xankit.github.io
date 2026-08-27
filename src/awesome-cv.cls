@@ -46,6 +46,10 @@
 %-------------------------------------------------------------------------------
 %                3rd party packages
 %-------------------------------------------------------------------------------
+% Configure a directory location for fonts (default: 'fonts/')
+\newcommand*{\fontdir}[1][fonts/]{\def\@fontdir{#1}}
+\fontdir
+
 % Needed to make fixed length table
 \RequirePackage{array}
 % Needed to handle list environment
@@ -70,6 +74,7 @@
 \RequirePackage[quiet]{fontspec}
 % To support LaTeX quoting style
 \defaultfontfeatures{Ligatures=TeX}
+\defaultfontfeatures[FontAwesome]{Path=\@fontdir}
 % Needed to manage math fonts
 \RequirePackage{unicode-math}
 % Needed to use icons from font-awesome
@@ -88,14 +93,6 @@
   pdfsubject={},
   pdfkeywords={}
 }
-
-
-%-------------------------------------------------------------------------------
-%                Configuration for directory locations
-%-------------------------------------------------------------------------------
-% Configure a directory location for fonts(default: 'fonts/')
-\newcommand*{\fontdir}[1][fonts/]{\def\@fontdir{#1}}
-\fontdir
 
 
 %-------------------------------------------------------------------------------
