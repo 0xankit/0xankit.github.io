@@ -37,7 +37,7 @@ jobs:
         run: |
           mkdir -p release
           cp src/resume.pdf release/Ankit_Kumar_resume_\(Blockchain_Developer\).pdf
-          cp src/cv.pdf release/Ankit_Kumar_CV_\(Blockchain_Developer\).pdf
+          cp src/cv.pdf release/Ankit_Kumar_cv_\(Blockchain_Developer\).pdf
           cp src/coverletter.pdf release/Ankit_Kumar_coverletter_\(Blockchain_Developer\).pdf   
 
       - name: Create GitHub release

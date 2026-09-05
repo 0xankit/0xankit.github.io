@@ -10,9 +10,9 @@ I am a results-driven Blockchain Engineer with 5+ years of experience across Cos
 
 Current role: Blockchain Engineer at [ENODA](https://enoda.com/) (Edinburgh, UK)
 
-Resume: [View](/files/Ankit_Kumar_resume_(Blockchain_Developer).pdf) : [Download (latest)](https://github.com/0xankit/0xankit.github.io/releases/latest/download/Ankit_Kumar_resume_(Blockchain_Developer).pdf)
+Resume: [View](/files/Ankit_Kumar_resume_(Blockchain_Developer).pdf) : [Download (latest)](https://github.com/0xankit/0xankit.github.io/releases/latest/download/Ankit_Kumar_resume_.Blockchain_Developer.pdf)
 
-CV: [View](/files/Ankit_Kumar_cv_(Blockchain_Developer).pdf) :[Download (latest)](https://github.com/0xankit/0xankit.github.io/releases/latest/download/Ankit_Kumar_cv_(Blockchain_Developer).pdf)
+CV: [View](/files/Ankit_Kumar_cv_(Blockchain_Developer).pdf) :[Download (latest)](https://github.com/0xankit/0xankit.github.io/releases/latest/download/Ankit_Kumar_cv_.Blockchain_Developer.pdf)
 
 
 ### Highlights
