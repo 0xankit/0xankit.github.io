@@ -11,10 +11,14 @@ all: build
 build: latex site
 
 latex:
+	rm -f files/Ankit_Kumar_*_\(Blockchain_Developer\).pdf
 	@set -e; for document in $(LATEX_DOCUMENTS); do \
 		echo "Building src/$$document.tex"; \
-		cd src && $(LATEX) $(LATEX_ARGS) "$$document.tex"; \
-		cd ..; \
+		(cd src && $(LATEX) $(LATEX_ARGS) "$$document.tex" && \
+		$(LATEX) $(LATEX_ARGS) "$$document.tex"); \
+		echo "Moving $$document.pdf to public directory"; \
+ 		destination="files/Ankit_Kumar_$${document}_(Blockchain_Developer).pdf"; \
+		mv "src/$$document.pdf" "$$destination"; \
 	done
 
 site:
