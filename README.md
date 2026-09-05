@@ -43,6 +43,17 @@ bundle exec jekyll serve
 
 Then open http://127.0.0.1:4000.
 
+### Make commands
+
+From the repository root:
+
+```bash
+make build  # Build LaTeX documents and the Jekyll site
+make test   # Build and validate the Jekyll site
+make clean  # Remove generated files
+make start  # Start the local Jekyll server
+```
+
 ### Test locally
 
 Build and validate the Jekyll site:

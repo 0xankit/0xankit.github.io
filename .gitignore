@@ -34,3 +34,6 @@ src/*.log
 src/*.out
 src/*.pdf
 src/*.synctex.gz
+**/*.log
+
+.DS_Store
